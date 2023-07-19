@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo"
+        android:textAlignment="textStart"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/logo"
+        android:layout_marginStart="5sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="5sp"
+        android:layout_toRightOf="@id/logo"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/temperature_info"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/logo"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_below="@id/city" />
+
+
+    <TextView
+        android:id="@+id/feels_like"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/logo"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_below="@id/temperature_info" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColorHint" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_below="@+id/user_field"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="130sp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_btn"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/feels_like_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_info"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/humidity_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feels_like_info"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wind_speed_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidity_info"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/english_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:text="En"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/russian_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Ru"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/theme_btn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

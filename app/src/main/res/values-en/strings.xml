@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="logo">Weather in Your City:</string>
+    <string name="hint_user_field">Enter a city</string>
+    <string name="main_btn">Get Weather</string>
+    <string name="no_user_input">Please enter text</string>
+    <string name="temperature_label">Temperature: </string>
+    <string name="error_getting_data">Error getting data</string>
+    <string name="waiting_message">Please wait...</string>
+    <string name="theme">Theme</string>
+    <string name="feels_like">Feels like: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="wind_speed">Wind Speed: </string>
+    <string name="speed">km/h</string>
+</resources>
